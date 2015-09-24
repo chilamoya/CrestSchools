@@ -108,7 +108,7 @@ public class MainActivity {
         Tabs t = new Tabs();
         t.addTab("Homework", showHomework());
         t.addTab("Payment", showPayments());
-        t.addTab("Results", showResults());
+        t.addTab("Notifications", showNotifications());
         
         
         
@@ -150,11 +150,11 @@ public class MainActivity {
         return payments;
     }
      
-     private Container showResults(){
-        Container results = new Container(new BorderLayout());
+     private Container showNotifications(){
+        Container notifications = new Container(new BorderLayout());
         Form f = new Form("Notifications");
-        results.addComponent(BorderLayout.NORTH, f);
-        return results;
+        notifications.addComponent(BorderLayout.NORTH, f);
+        return notifications;
     }
 
     public void stop() {
